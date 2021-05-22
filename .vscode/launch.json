@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Connect to docker",
+      "type": "go",
+      "preLaunchTask": "docker run debug",
+      "postDebugTask": "docker stop debug",
+      "request": "attach",
+      "mode": "remote",
+      "remotePath": "/app",
+      "apiVersion": 2,
+      "port": 2345,
+      "host": "127.0.0.1"
+    }
+  ],
+  "compounds": []
+}
